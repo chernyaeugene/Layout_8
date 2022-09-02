@@ -87,7 +87,9 @@ p {
 .container_menu,
 .container_txt,
 .product_container,
-.review_container {
+.review_container,
+.subscribe_container,
+.footer_container {
   max-width: 1124px;
   padding: 0 30px;
   margin: 0 auto;
@@ -338,4 +340,109 @@ p {
   @extend %font_bold;
   font-size: 18px;
   text-decoration: underline;
+}
+
+//main <section class="subscribe">
+.subscribe {
+  padding: 80px 0 88px;
+}
+.subscribe_container {
+  text-align: center;
+}
+.subscribe_container h2 {
+  margin-bottom: 9px;
+}
+.subscribe_container p {
+  @extend %font_bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 26px;
+}
+.subscribe_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_name_box {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.form_name,
+.form_last {
+  max-width: 153px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+}
+.form_name::placeholder,
+.form_last::placeholder,
+.form_email::placeholder {
+  color: #A0A0A0;
+  font-family: 'RobotoRegular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 16px;
+}
+.form_email {
+  max-width: 366px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  margin-bottom: 16px;
+}
+.form_btn {
+  @extend %btn;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 7px 23px 10px;
+}
+
+//footer
+footer {
+  color: white;
+  background-color: black;
+  padding: 51px 0 16px;
+}
+.footer_container {
+  text-align: center;
+}
+.footer_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer_logo img {
+  margin-bottom: 37px;
+}
+.footer_social {
+  display: flex;
+  gap: 20px;
+}
+.footer_box_links {
+  display: flex;
+  gap: 72px;
+  text-align: left;
+}
+.footer_txt {
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+.footer_list li {
+  margin-bottom: 12px;
+}
+.footer_list li:last-child {
+  margin-bottom: 0;
+}
+.footer_list > li a {
+  color: white;
+  font-family: 'RobotoRegular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.footer_bottom_txt {
+  font-size: 14px;
 }
