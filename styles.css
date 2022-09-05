@@ -161,6 +161,10 @@ p {
   font-size: 17px;
   padding: 7px 23px 9px; }
 
+.header_txt h1,
+.header_txt p {
+  text-shadow: #F0EFEB 1px 0 5px; }
+
 .slider_img {
   text-align: right; }
 
