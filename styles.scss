@@ -60,6 +60,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body, a {
   color: black;
 }
+body._lock {
+  overflow: hidden;
+}
 %font_bold {
    font-family: 'RobotoBold', sans-serif;
    font-weight: 700;
@@ -108,10 +111,6 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.menu_list {
-  display: flex;
-  gap: 28px;
-}
 .menu_link {
   @extend %font_bold;
   font-size: 16px;
@@ -123,6 +122,9 @@ p {
   align-items: center;
   margin-left: 300px;
 }
+.menu_icon {
+   display: none;
+ }
 .header_box_txt {
   background-color: #F0EFEB;
   padding-top: 132px;
@@ -194,6 +196,7 @@ p {
   align-items: center;
   text-align: center;
   max-width: 309px;
+  margin-bottom: 52px;
 }
 .guides_img  {
   margin-bottom: 27px;
@@ -232,15 +235,6 @@ p {
 }
 .present > div:nth-child(even) {
   background-color: rgba(204, 204, 204, 60%);
-}
-.present > div:nth-child(even) .product_container {
-  justify-content: right;
-}
-.present > div:nth-child(odd) .product_txt {
-  text-align: left;
-}
-.present > div:nth-child(even) .product_txt {
-  text-align: right;
 }
 .product_txt {
   max-width: 532px;

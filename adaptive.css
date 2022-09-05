@@ -1,0 +1,136 @@
+@media (min-width: 736px) {
+  .menu_list {
+    display: flex;
+    gap: 28px;
+  }
+}
+@media (min-width: 930px) {
+  .present > div:nth-child(even) .product_container {
+    justify-content: right;
+  }
+  .present > div:nth-child(odd) .product_txt {
+    text-align: left;
+  }
+  .present > div:nth-child(even) .product_txt {
+    text-align: right;
+  }
+}
+@media (max-width: 1123px) {
+  .review_container > div {
+    margin-bottom: 390px;
+  }
+  .review_container > div:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1021px) {
+  .header_box_cart {
+    margin-left: 125px;
+  }
+}
+@media (max-width: 930px) {
+  .product_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .present > div:nth-child(even) .product_container {
+    flex-direction: column-reverse;
+  }
+  .product_txt {
+    text-align: center;
+  }
+}
+@media (max-width: 846px) {
+  .header_box_cart {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 736px) {
+  .menu_icon {
+    display: block;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+  }
+  .menu_icon span,
+  .menu_icon::before,
+  .menu_icon::after {
+    left: 0;
+    position: absolute;
+    z-index: 6;
+    height: 15%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: black;
+  }
+  .menu_icon::before,
+  .menu_icon::after {
+    content: "";
+  }
+
+  .menu_icon::before {
+    top: 0;
+  }
+  .menu_icon::after {
+    bottom: 0;
+  }
+  .menu_icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu_icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu_icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu_icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .header_menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 95px 30px 30px 35px;
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+    }
+  .header_menu._active {
+    right: 0;
+  }
+  .header_menu li {
+    margin: 0 0 68px 0;
+  }
+  .header_menu._active {
+    display: block;
+  }
+  .header_menu li:last-child {
+    margin-bottom: 0;
+  }
+  .menu_link {
+    font-size: 34px;
+  }
+}
+@media (max-width: 700px) {
+  .guides_items_box {
+    flex-direction: column;
+    align-items: center
+  }
+}
+@media (max-width: 625px) {
+  .footer_box {
+    flex-direction: column;
+    align-items: center
+  }
+  .footer_logo_social {
+    margin-bottom: 45px;
+  }
+}
